@@ -12,6 +12,7 @@ def run(input_part1_path, input_part2_path):
 
 
 if __name__ == "__main__":
-    part1_result, part2_result = run("input_part1.txt", "input_part2.txt")
+    part1_result, part2_result = run(
+        "../inputs/day1test.txt", "../inputs/day1real.txt")
     print(f"Part 1 Result: {part1_result}")
     print(f"Part 2 Result: {part2_result}")

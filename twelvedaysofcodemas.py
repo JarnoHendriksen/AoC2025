@@ -13,6 +13,8 @@ from days.Day10 import run as Day10
 from days.Day11 import run as Day11
 from days.Day12 import run as Day12
 
+import utils
+
 
 def getDayFunction(day_number):
     day_functions = {
@@ -88,7 +90,7 @@ def runNumberOfDays(number_of_days):
             continue
 
         part1, part2 = day_function(
-            f"./inputs/day{current_day}-1.txt", f"./inputs/day{current_day}-2.txt")
+            f"./inputs/day{current_day}test.txt", f"./inputs/day{current_day}real.txt")
         resultLyrics = getResultLyrics(
             multiple_days, current_day, part1, part2)
         print("\t" + resultLyrics)
@@ -101,6 +103,8 @@ if __name__ == "__main__":
     parser.add_argument("--day", type=int, required=True,
                         help="Day number to run")
     args = parser.parse_args()
+
+    utils.verbosity = 0
 
     print("\n")
     print("\t==== 12 Days of Codemas ====")

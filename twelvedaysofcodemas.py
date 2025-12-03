@@ -13,7 +13,7 @@ from days.Day10 import run as Day10
 from days.Day11 import run as Day11
 from days.Day12 import run as Day12
 
-import utils
+import days.utils as utils
 
 
 def getDayFunction(day_number):

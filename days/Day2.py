@@ -1,6 +1,6 @@
 import math
 
-import utils
+import days.utils as utils
 
 
 def check_pattern_twice(number, pattern: str) -> bool:
